@@ -1,0 +1,38 @@
+'use strict'
+
+var MongoDB = require('mongodb')
+    .Db;
+var Server = require('mongodb')
+    .Server;
+var moment = require('moment');
+var ObjectId = require('mongodb')
+    .ObjectID;
+
+var dbPort = 27017;
+var dbHost = 'localhost';
+var dbName = 'ritzy';
+var db = new MongoDB(dbName, new Server(dbHost, dbPort, {
+    auto_reconnect: true
+}), {
+    w: 1
+});
+db.open(function(e, d) {
+    if (e) {
+        console.log(e);
+    } else {
+        console.log('connected to database :: ' + dbName);
+    }
+});
+var DB = {};
+var recipes = db.collection('recipes');
+var accounts = db.collection('accounts');
+var pingo = db.collection('pingodoce');
+var cont = db.collection('continente');
+var pantry = db.collection('pantry');
+DB.recipes = recipes;
+DB.accounts = accounts;
+DB.objectID = ObjectId;
+DB.pingo = pingo;
+DB.continente = cont;
+DB.pantry = pantry;
+module.exports = DB;
