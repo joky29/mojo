@@ -1,7 +1,82 @@
-body {
-  padding-top: 5rem;
+html, body {
+	margin:0;
+	padding:0;
+	height:100%
 }
-.starter-template {
-  padding: 3rem 1.5rem;
-  text-align: center;
+
+#wrap {
+  min-height: 100%;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -82px 0;
+  /* Pad bottom by footer height */
+  padding: 0 0 0 0;
+}
+
+body { font-family:Georgia, "Times New Roman", Times, serif }
+h1, p { margin:0 0 2em; }
+h1 { text-align:center; }
+
+.intro {
+	display:table;
+	height:100%;
+	width:100%;
+	margin:auto;
+	background:url(./common/homeImg/back.jpg) ;
+	background-size: 100% 100%;
+}
+.intro .inner {
+	display:table-cell;
+	vertical-align:middle;
+	width:100%;
+	max-width:none;
+}
+.content {
+	padding:10px;
+	background:rgba(255,255,255,0.2);
+	max-width:600px;
+	margin:auto;
+}
+slogan {
+  color: white;
+  font-size: 20px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-family: sans-serif;
+}
+a1 {
+  color: rgba(140,140,140,1);
+  font-size: 60px;
+  text-align:center;
+  margin:0 0 2em;
+}
+.inner {
+	max-width:600px;
+	margin:auto;
+	font-size:140%;
+	line-height:1.6;
+	padding:10px
+}
+.page {
+	width:80%;
+	margin:auto;
+}
+.page .inner p { padding:2em 0 0 }
+.media {
+	width:100%;
+	padding-top:56.2%;
+	position:relative;
+	background:red
+}
+.media img {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:100%;
 }
