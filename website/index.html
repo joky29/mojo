@@ -1,45 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="MOJO">
-    <meta name="author" content="j0kY">
-    <link rel="icon" href="./assets/bootstrap/docs/favicon.ico">
+<html>
 
-    <title>Starter Template for Bootstrap</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Produção e comércio por grosso e a retalho de produtos hortícolas e frutas.">
+  <meta name="keywords" content="horticula, frutas, comércio, agricula, retalho, produtos, produção">
+  <meta name="author" content="Daniel Ferreira">
+  <title>MOJÔSwimwear | Ínicio</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
 
-    <link href="./assets/bootstrap/docs/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="starter-template.css" rel="stylesheet">
-  </head>
-
-  <body>
-    <div id="header"></div>
-
-    
+<body>
+  <header>
     <div class="container">
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      <div id="branding">
+        <h1>MOJÔ <span class="highlight">Swimwear</span> </h1>
       </div>
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html">Início</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="services.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    </div><!-- /.container -->
+  <section id="showcase">
+    <div class="container">
+      <h1>MOJÔ Swimwear</h1>
+      <p>Vem conhecer os nossos bikinis e acessórios.</p>
+    </div>
+  </section>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="./assets/bootstrap/docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./assets/bootstrap/docs/dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./assets/bootstrap/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+  <section id="newsletter">
+    <div class="container">
+      <h1>Segue-nos no Instagram      <a href="https://www.instagram.com/mojo_swimlisboa/?hl=pt">
+        <img src="img/instagram.png" alt="Instagram" height="65" width="65px"></a></h1>
+    </div>
+  </section>
 
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <section id="boxes">
+    <div class="container">
+      <a style="display:block" href="about.html">
+        <div class="box">
+          <img src="./img/bikinis/modelos.jpg">
+          <h3>Os nosso Modelos</h3>
+          <p>Temos modelos de todas as formas e feitios que possas imaginar. Vem conhece-los!</p>
+        </div>
+      </a>
+      <div class="box">
+        <img src="./img/tecidos/tecidos.jpg">
+        <h3>Os nossos Tecidos</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+      </div>
+      <div class="box">
+        <img src="./img/colares/colares.jpg">
+        <h3>Os nossos Colares</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+      </div>
+    </div>
+  </section>
 
-    <script type="text/javascript">
-      $("#header").load("./pages/header.html");
-    </script>
-  </body>
+  <footer>
+    <p>MOJÔ Swimwear Lisboa, Copyright &copy; 2017</p>
+  </footer>
+</body>
+
 </html>
