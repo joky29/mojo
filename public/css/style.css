@@ -34,7 +34,7 @@ header {
   min-height: 50px;
   padding-top: 5px;
   color: #ffffff;
-  border-bottom: #e8491d 3px solid;
+  border-bottom: #de2f83 3px solid;
   background: #35424a;
 }
 
@@ -59,13 +59,13 @@ header #branding h1 {
   margin: 0;
 }
 
-header nav {
+header topnav {
   float: right;
   margin-top: 10px;
 }
 
 header .highlight, header .current a {
-  color: #e8491d;
+  color: #de2f83;
   font-weight: bold;
 }
 
@@ -80,21 +80,21 @@ header a:hover {
 #showcase {
   min-height: 400px;
   text-align: center;
-  color: #df7b5f;
+  color: #de2f83;
   background: url('../img/showcase.jpg') no-repeat 0 -400px;
 }
 
 #showcase h1 {
   margin-top: 20px;
   margin-bottom: 10px;
-  text-shadow: 3px 3px #777d5d;
+  text-shadow: 2px 2px #a1a1a1;
   font-size: 55px;
 }
 
 #showcase p {
   margin-top: 130px;
   font-size: 35px;
-  text-shadow: 1px 1px #777d5d;
+  text-shadow: 1px 1px #a1a1a1;
 }
 
 
@@ -184,20 +184,20 @@ footer {
   padding: 1px;
   text-align: center;
   color: #ffffff;
-  background-color: #e8491d;
+  background-color: #de2f83;
 }
 
 
 /* Media Queries */
 
 @media(max-width: 768px) {
-  header #branding, header nav, header nav li, #boxes .box, article#main-col, aside#sidebar {
+  header #branding, header topnav, header topnav li, #boxes .box, article#main-col, aside#sidebar {
     float: none;
     width: 100%;
     text-align: center;
   }
   header {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   #showcase h1 {
     margin-top: 40px;
@@ -219,4 +219,8 @@ footer {
   #boxes .box {
     padding: 0px;
   }
+  header #branding h1 {
+    margin-bottom: 10px;
+  }
+
 }
