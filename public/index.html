@@ -4,12 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Produção e comércio por grosso e a retalho de produtos hortícolas e frutas.">
-  <meta name="keywords" content="horticula, frutas, comércio, agricula, retalho, produtos, produção">
+  <meta name="description" content="MOJÔ Swimwear">
+  <meta name="keywords" content="bikinis, colares, fatos de banho, swimwear, mojo, mojô, lisboa, praia, acessórios">
   <meta name="author" content="Daniel Ferreira">
   <title>MOJÔSwimwear | Ínicio</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/modal.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon2.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon" />
 </head>
 
 <body>
@@ -21,7 +27,7 @@
       <topnav>
         <ul>
           <li class="current"><a href="index.html">Início</a></li>
-          <li><a href="bikinis.html">Bikinis</a></li>
+          <li id="myBtn">Bikinis</li>
           <li><a href="colares.html">Colares</a></li>
           <li><a href="services.html">Contactos</a></li>
         </ul>
@@ -29,13 +35,10 @@
     </div>
   </header>
 
-
-
-
   <section id="showcase">
     <div class="container">
       <h1>MOJÔ Swimwear</h1>
-      <p>Vem conhecer os nossos bikinis e acessórios.</p>
+      <p>Vem conhecer os nossos bikinis e acessórios</p>
     </div>
   </section>
 
@@ -45,7 +48,7 @@
 
   <section id="newsletter">
     <div class="container">
-      <h1>Segue-nos no Instagram      </h1>
+      <h1>Segue-nos no Instagram</h1>
       <a href="https://www.instagram.com/mojo_swimlisboa/?hl=pt">
         <img src="img/instagram.png" alt="Instagram" height="65" width="65px"></a>
     </div>
@@ -58,29 +61,74 @@
 
   <section id="boxes">
     <div class="container">
-      <a style="display:block" href="about.html">
-        <div class="box">
-          <img src="/img/Bikinis/modelos.jpg">
-          <h3>Os nosso Modelos</h3>
-          <p>Temos modelos de todas as formas e feitios que possas imaginar. Vem conhece-los!</p>
-        </div>
-      </a>
+      <div class="box" id="myBtn2">
+        <img src="img/Bikinis/modelos.jpg">
+        <h2>Os nosso Modelos</h2>
+        <p>Temos modelos de todas as formas e feitios que possas imaginar. Vem conhece-los!</p>
+      </div>
       <div class="box">
-        <img src="/img/Tecidos/tecidos.jpg">
-        <h3>Os nossos Tecidos</h3>
+        <img src="img/Tecidos/tecidos.jpg">
+        <h2>Os nossos Tecidos</h2>
         <p>Temos os teus tecidos favoritos, sejam lisos ou com padrões. Espreita!</p>
       </div>
       <div class="box">
-        <img src="/img/Colares/colares.jpg")>
-        <h3>Os nossos Colares</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        <img src="img/Colares/colares.jpg" )>
+        <h2>Os nossos Colares</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, </p>
       </div>
     </div>
   </section>
 
+
+
+  <section id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <section id="myBoxes">
+        <div class="containerModel">
+          <a href="bikinis.html">
+            <div class="box">
+              <img src="img/Bikinis/bikiniModel.jpg">
+              <h3>Bikinis</h3>
+            </div>
+          </a>
+          <a href="fatos.html">
+            <div class="box">
+              <img src="img/Bikinis/fatoModel.jpg">
+              <h3>Fatos de banho</h3>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+  </section>
   <footer>
     <p>MOJÔ Swimwear Lisboa, Copyright &copy; 2017</p>
   </footer>
+
+
+
+  <script>
+    var modal = document.getElementById('myModal');
+    var btn = document.getElementById("myBtn");
+    var btn2 = document.getElementById("myBtn2");
+    var span = document.getElementsByClassName("close")[0];
+    btn2.onclick = function() {
+      modal.style.display = "block";
+    }
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
 </body>
 
 </html>

@@ -2,9 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  font: 15px/1.5  cursive, "Open Sans", sans-serif;
 }
-
 
 /* Global */
 
@@ -46,6 +45,9 @@ header a {
 }
 
 header li {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
   display: inline;
   float: left;
   padding: 0 20px 0 20px;
@@ -64,12 +66,13 @@ header topnav {
   margin-top: 10px;
 }
 
-header .highlight, header .current a {
+header .highlight, header .current a{
   color: #de2f83;
   font-weight: bold;
 }
 
-header a:hover {
+header a:hover , header #myBtn:hover {
+  cursor: pointer;
   color: #cccccc;
   font-weight: bold;
 }
@@ -124,6 +127,8 @@ header a:hover {
 
 #boxes {
   margin-top: 20px;
+  position:relative;
+  text-align:center;
 }
 
 #boxes a {
@@ -133,19 +138,19 @@ header a:hover {
 
 #boxes .box:hover {
   background: #e8e7e7;
+  cursor: pointer;
 }
 
 #boxes .box {
-  float: left;
+  display:inline-block;
   width: 30%;
-  padding: 10px;
+  margin: 10px auto;
   text-align: center;
 }
 
 #boxes .box img {
   width: 80%;
 }
-
 
 /* Sidebar */
 
@@ -160,7 +165,6 @@ aside#sidebar .quote input, aside#sidebar .quote textarea {
   padding: 5px;
 }
 
-
 /* Main-col */
 
 article#main-col {
@@ -168,29 +172,42 @@ article#main-col {
   width: 65%;
 }
 
-
 /* Services */
 
 ul#services li {
-  margin-bottom: 5px;
-  padding: 20px;
+  margin-bottom: 10px;
+  padding: 2px;
   list-style: none;
   border: #cccccc solid 1px;
   background: #e6e6e6;
+  text-align: center;
+}
+
+ul#services li:hover {
+  background: #d2d2d2;
+}
+
+ul#services img {
+  margin-top: 0px;
+  width: 45%;
+}
+
+ul#services h2{
+  margin-top: 1px;
 }
 
 footer {
-  margin-top: 1px;
+  margin-top: 20px;
   padding: 1px;
   text-align: center;
   color: #ffffff;
   background-color: #de2f83;
 }
 
-
 /* Media Queries */
 
 @media(max-width: 768px) {
+
   header #branding, header topnav, header topnav li, #boxes .box, article#main-col, aside#sidebar {
     float: none;
     width: 100%;
@@ -222,5 +239,4 @@ footer {
   header #branding h1 {
     margin-bottom: 10px;
   }
-
 }
